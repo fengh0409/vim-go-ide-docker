@@ -57,17 +57,17 @@ docker run -ti $GOPATH:/root/gowork fengh0409/vim-go-ide:1.14.6 bash
 ```
 
 #### shortcut key
-- F10 显示目录树, by nerdtree
-- F9 显示tag, by tagbar
-- Ctrl + K 跳转到某个函数、变量的定义, by vim-godef
-- Ctrl + J 查看某个接口的实现, by vim-godef 
+- F10 Show the directory tree, by nerdtree plugin
+- F9 Show the classes/methods/variables, etc., can be selected to quickly jump to the target location, by tagbar plugin
+- Ctrl + K Jump to the definition of a function or variable, by vim-godef plugin
+- Ctrl + J Jump to the implementation of an interface, by vim-godef plugin
 
 ## Build
 ```
 docker build -t fengh0409/vim-go-ide:1.14.6 .
 ```
 
-注意：由于网络问题，上述构建方式很可能会失败，最好在构建环境开启代理，加上构建参数 `--network=host` ：
+Note：Due to network problems, the above build method is likely to fail, it is best to enable the proxy in the construction environment, and add the parameter `--network=host` when build image：
 ```
 docker build --network=host -t fengh0409/vim-go-ide:1.14.6 .
 ```
