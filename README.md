@@ -1,4 +1,4 @@
-## vim-go-ide
+## vim-go-ide-docker
 This is a docker image for vim go ide
 
 ## Version
