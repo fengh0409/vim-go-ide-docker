@@ -38,6 +38,7 @@ set cursorline "突出显示当前行
 " set cursorcolumn " 突出显示当前列
 set showmatch " 显示括号匹配
 set backspace=2 " 倒退键删除
+set hlsearch " 搜索高亮
 
 
 " tab 缩进
@@ -246,7 +247,7 @@ let NERDTreeShowLineNumbers=1
 " 打开文件时是否显示目录
 let NERDTreeAutoCenter=0
 " 是否显示隐藏文件
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden=0
 " 设置宽度
 " let NERDTreeWinSize=31
 " 忽略一下文件的显示
